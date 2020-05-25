@@ -53,6 +53,8 @@ class signout(View):
 class users(ListView):
     template_name = "users.html"
     model = User
+    paginate_by = 1
+
 
 class results(View):
     template_name = "results.html"
