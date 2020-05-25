@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+    <h1>Home</h1>
+    <p>Authenticated as: {{ request.user }}</p>
+    <a class="text-danger" href="{% url 'logout' %}">Logout</a>
+    <hr>
+
+{% endblock %}

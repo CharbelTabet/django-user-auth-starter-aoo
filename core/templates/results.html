@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+    
+    {% if exists %}
+        <h2 class="text-success">User "{{ search_query }}" exists!</h2>
+    {% else %}
+        <h2 class="text-danger">User "{{ search_query }}" does not exist!</h2>
+    {% endif %}
+
+{% endblock %}
